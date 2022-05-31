@@ -12,10 +12,9 @@
 <body>
     <h1>Your own collection of the newest news on music</h1>
 
-    <!---below form code taken from this page: https://www.w3schools.com/howto/howto_css_signup_form.asp -->
-
-    <form action="action-page.js" style="border: 5px;" >
-        <div class="container">
+    <!-- below form code taken from this page: https://www.w3schools.com/howto/howto_css_signup_form.asp -->
+    <div class="container">
+        <form action="/static/js/app.js" method="post" id="signup" border: 5px;" >
             <h2>Sign up for daily music tidbits right to your inbox</h2>
             <p>Please provide us with some info</p>
             <hr>
@@ -32,13 +31,14 @@
             <label>
             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
             </label>
-        </div>
+        
 
-        <div class="clearfix">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
-        </div>
-    </form>
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </form>
+    </div>
 
     <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
     <script src="static/js/bootstrap.js"></script>
