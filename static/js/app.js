@@ -1,5 +1,5 @@
 // submits/resets a form to the server
-// Note: most below code is taken from this page:https://www.javascripttutorial.net/javascript-dom/javascript-form/
+// Note: Below code is taken from this page:https://www.javascripttutorial.net/javascript-dom/javascript-form/
 // slightly modified for my purposes
 
 // show a message with a type of the input
