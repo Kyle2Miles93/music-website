@@ -28,6 +28,30 @@ h1,h2 {
   transform: scale(0.5) translateY(-15px);
 }
 
+.toggle.active {
+  background: url('close.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* below CSS code taken from this page: https://www.w3schools.com/howto/howto_css_signup_form.asp */
 
@@ -99,4 +123,10 @@ button:hover {
     width: 100%;
   }
 }
+
+@media(max-width: 798px) {
+  .showcase, 
+  .showcase header {
+      padding: 40px;
+  }
 

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Music Buzz</title>
+    
+</head>
+<body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Music Buzz</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <!--video source from https://www.pexels.com/video/-->
+      <video src="piano.mp4" muted loop autoplay></video>
+  
+      <div class="overlay"></div>
+
+      <h1>Your own collection of the newest news on music</h1>
+
+      <div id="like_button_container"></div>
+
+      <!--social media buttons-->
+      <ul class="social">
+        <li>
+          <a href="#"><img src="facebook.png" alt="facebook.com"/></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="twitter.com"/></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/milezisbass/"><img src="instagram.png" alt="instagram.com"/></a>
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- below form code taken from this page: https://www.w3schools.com/howto/howto_css_signup_form.asp -->
+    <div class="container">
+      <form action="/static/js/app.js" method="post" id="signup" border: 5px;" >
+          <h2>Sign up for daily music tidbits right to your inbox</h2>
+          <p>Please provide us with some info</p>
+          <hr>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+          <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+
+          <div class="clearfix">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+      </form>
+    </div>
+
+
+    <!-- sidebar -->
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="https://medium.com/@milezisbass93/led-simulacra-musings-about-ecology-big-tech-and-opposable-thumbs-6e2e8aedd523">Blog</a></li>
+        <li><a href="https://www.linkedin.com/in/miles-tsue/">Contact</a></li>
+        <li><a href="#">Destination</a></li>
+      </ul>
+  </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script>
+      const menuToggle = document.querySelector('.toggle')
+      const showcase = document.querySelector('.showcase')
+      
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+      })
+    </script>
+    
+</body>
+</html>
